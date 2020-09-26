@@ -1,6 +1,6 @@
 let a ;
 let date;
-let time;
+let time, t;
 
 const options = {weekday:'long', year: 'numeric', month: 'long', day: 'numeric'};
 setInterval(() => {
