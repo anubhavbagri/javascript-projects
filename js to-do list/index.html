@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>JS Clock</title>
+    <title>JS To-Do List</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Javascript Clock</a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Javascript To-Do List</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@
                 </li> -->
                 <li class="nav-item">
                     <a class="nav-link" target="_blank"
-                        href="https://codewithharry.com/videos/javascript-tutorial-in-hindi-in-one-video-2020">How did I
-                        make it?</a>
+                        href="https://codewithharry.com/videos/javascript-tutorial-in-hindi-in-one-video-2020">Make your
+                        own</a>
                 </li>
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,29 +50,19 @@
         </div>
     </nav>
     <div class="container my-4">
-        <div class="jumbotron">
-            <h1 class="display-4">Current Time (Kolkata): <span id="time"></span></h1>
-            <p class="lead">"Time is too slow for those who wait, too swift for those who fear, too long for those who
-                grieve, too short for those who rejoice, but for those who love, time is eternity."</p>
-            <hr class="my-4">
-            <p>Click to see the times for different places:</p>
-            <a class="btn btn-primary btn-lg shadow-none" data-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">Browse Times</a>
-        </div>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <h4>New York, United States</h4><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=America%2FNew_York" width="100%" height="90" frameborder="0" seamless></iframe>
-                <br>
-                <h4>London, United Kingdom</h4><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Europe%2FLondon" width="100%" height="90" frameborder="0" seamless></iframe>
-                <br>
-                <h4>Taipei, Taiwan</h4><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FTaipei" width="100%" height="90" frameborder="0" seamless></iframe>
-                <br>
-                <h4>Sydney, Australia</h4><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Australia%2FSydney" width="100%" height="90" frameborder="0" seamless></iframe>
-                <br>
-                <h4>Pretoria, South Africa</h4><iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Africa%2FJohannesburg" width="100%" height="90" frameborder="0" seamless></iframe>
-
+        <h2 class="text-center">Your To-Do List</h2>
+        <form>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Add an item to the list.</small>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="textarea" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Add to list</button>
+        </form>
     </div>
     <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
