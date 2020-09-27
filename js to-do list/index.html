@@ -54,15 +54,37 @@
         <form>
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                <input type="text" class="form-control shadow-none" id="title" aria-describedby="emailHelp">
                 <small id="emailHelp" class="form-text text-muted">Add an item to the list.</small>
             </div>
             <div class="form-group">
                 <label for="description">Description</label>
-                <input type="textarea" class="form-control" id="exampleInputPassword1">
+                <textarea class="form-control shadow-none" id="description" rows="3" style="resize: none;"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Add to list</button>
+            <button type="submit" id="add" class="btn btn-primary shadow-none">Add to list</button>
         </form>
+        <div id="items" class="my-4">
+            <h2>Your Items</h2><br>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">SNo.</th>
+                    <th scope="col">Item Title</th>
+                    <th scope="col">Item Description</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td><button class="btn btn-sm btn-danger">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
     </div>
     <script src="script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
