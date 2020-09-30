@@ -1,7 +1,7 @@
 let a ;
 let date;
 let time, t;
-
+console.log("This is a clock");
 const options = {weekday:'long', year: 'numeric', month: 'long', day: 'numeric'};
 setInterval(() => {
     a = new Date();
