@@ -22,7 +22,7 @@
         </button>
 
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
                 <!-- <li class="nav-item active">
                     <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
                 </li> -->
@@ -47,6 +47,11 @@
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li> -->
             </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 shadow-none" type="text" id="search" onkeyup="doSearch()" placeholder="Search Task"
+                    aria-label="Search">
+                <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> -->
+            </div>
         </div>
     </nav>
     <div class="container my-4">
@@ -55,7 +60,7 @@
         <div class="form-group">
             <label for="title">Title</label>
             <input type="text" class="form-control shadow-none" id="title" aria-describedby="emailHelp">
-            <small id="emailHelp" class="form-text text-muted">Add an item to the list.</small>
+            <small id="emailHelp" class="form-text text-muted">Add your task to the list.</small>
         </div>
 
         <div class="form-group">
@@ -63,29 +68,31 @@
             <textarea class="form-control shadow-none" id="description" rows="3" style="resize: none;"></textarea>
         </div>
 
-        <button id="add" class="btn btn-primary shadow-none" >Add to list</button>
+        <button id="add" class="btn btn-primary shadow-none">Add to list</button>
         <button id="clear" class="btn btn-primary shadow-none" onclick="clearStorage()">Clear list</button>
 
         <div id="items" class="my-4">
-            <h2>Your Items</h2><br>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">SNo.</th>
-                        <th scope="col">Item Title</th>
-                        <th scope="col">Item Description</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Get some Coffee</td>
-                        <td>You need coffee as you are a coder</td>
-                        <td><button class="btn btn-sm btn-danger shadow-none">Delete</button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2>Your Tasks</h2><br>
+            <div class="table-responsive">
+                <table id="tbl" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">SNo.</th>
+                            <th scope="col">Task Title</th>
+                            <th scope="col">Task Description</th>
+                            <th scope="col">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Get some Coffee</td>
+                            <td>You need coffee as you are a coder</td>
+                            <td><button class="btn btn-sm btn-danger shadow-none">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
