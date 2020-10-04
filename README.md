@@ -1,4 +1,4 @@
-## Javascript-projects
+# Javascript-projects
 
-# Javascript projects made for getting a good command over the language.
+### Javascript projects made for getting a good command over the language.
 
