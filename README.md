@@ -11,6 +11,6 @@
 
 ## Digital Clock
 
-![Clock image](img/clock.gif)
+![Clock image](clock.gif)
 
 Made this digital browser clock using vanilla javascript by referring to [code with harry](https://codewithharry.com/videos/javascript-tutorial-in-hindi-in-one-video-2020) javascript tutorial and also added an extra feature - it shows times of different cities of the world.   
