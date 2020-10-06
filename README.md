@@ -20,7 +20,7 @@ Made this digital browser clock using vanilla javascript by referring to [code w
 
 ![ToDoList gif](todo.gif)
 
-Made this browser to do list using vanilla javascript by referring to [code with harry](https://codewithharry.com/videos/javascript-tutorial-in-hindi-in-one-video-2020) javascript tutorial which uses ```localStorage``` to store the item title and its description. Also added a search feature in the nav bar to easily search any task in the list. If you want to add any other feature and contribute to the repository, you can create a pull request 😉 I will be more than happy to merge it!  
+Made this browser to do list using vanilla javascript by referring to [code with harry](https://codewithharry.com/videos/javascript-tutorial-in-hindi-in-one-video-2020) javascript tutorial which uses ```localStorage()``` to store the item title and its description. Also added a search feature in the nav bar to easily search any task in the list. If you want to add any other feature and contribute to the repository, you can create a pull request 😉 I will be more than happy to merge it!  
 
 ## Acknowledgements
 
