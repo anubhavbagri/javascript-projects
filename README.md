@@ -1,7 +1,3 @@
-# Javascript-Projects
-
-> Javascript projects made for getting a good command over the language.
-
 ### Contents
 
 * [Digital Clock](#digital-clock)
