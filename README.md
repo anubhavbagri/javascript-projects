@@ -2,6 +2,8 @@
 
 * [Digital Clock](https://anubhavbagri.github.io/javascript-projects/javascript%20clock/index.html)
 * [To Do List](https://anubhavbagri.github.io/javascript-projects/js%20to-do%20list/index.html)
+* [Basic Calculator](https://anubhavbagri.github.io/javascript-projects/basic-calculator/index.html)
+* [Snake Game](https://anubhavbagri.github.io/javascript-projects/snake-game/index.html)
 * [Acknowledgements](#acknowledgements)
 
 ---
