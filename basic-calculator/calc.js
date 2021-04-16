@@ -1,69 +1,67 @@
-const calculatorScreen=document.querySelector('.calculator-screen')
-const numbers=document.querySelectorAll(".number")
-const operators=document.querySelectorAll(".operator")
-const equalSign=document.querySelector('.equal-sign')
+const calculatorScreen = document.querySelector('.calculator-screen')
+const numbers = document.querySelectorAll(".number")
+const operators = document.querySelectorAll(".operator")
+const equalSign = document.querySelector('.equal-sign')
 
-const updateScreen=(number)=>{
-	calculatorScreen.value=number
+const updateScreen = (number) => {
+	calculatorScreen.value = number
 
 }
 
-
-
-const inputNumber=(number)=>{
-	if (currentInput==='0'){
-		currentInput=number
+const inputNumber = (number) => {
+	if (currentInput === '0') {
+		currentInput = number
 	}
-	else{
+	else {
 		currentInput += number
 	}
 }
-const inputOperator=(operator)=>{
-	prevInput=currentInput
-	calculationOperator=operator
-	currentInput='0'
+const inputOperator = (operator) => {
+	prevInput = currentInput
+	calculationOperator = operator
+	currentInput = '0'
 }
-const calculate=()=>{
-	let result=0
-	switch(calculationOperator){
+const calculate = () => {
+	let result = 0
+	switch (calculationOperator) {
 		case '+':
-		 result=parseInt(prevInput)+parseInt(currentInput)
-		 break;
+			result = parseInt(prevInput) + parseInt(currentInput)
+			break;
 		case '-':
-		 result=parseInt(prevInput)-parseInt(currentInput)
-		 break;
+			result = parseInt(prevInput) - parseInt(currentInput)
+			break;
 		case '*':
-		 result=parseInt(prevInput)*parseInt(currentInput)
-		 break;
+			result = parseInt(prevInput) * parseInt(currentInput)
+			break;
 		case '/':
-		 result=parseInt(prevInput)/parseInt(currentInput)
-		 break;
-     case '%':
-     result=parseInt(prevInput)%parseInt(currentInput)
-     break;
+			result = parseInt(prevInput) / parseInt(currentInput)
+			break;
+		case '%':
+			result = parseInt(prevInput) % parseInt(currentInput)
+			break;
 		default:
-		 return
+			return
 	}
-	currentInput=result.toString()
-	calculationOperator=''
+	currentInput = result.toString()
+	calculationOperator = ''
 }
-equalSign.addEventListener('click',()=>{
+equalSign.addEventListener('click', () => {
 	calculate()
 	updateScreen(currentInput)
 })
-operators.forEach((operator)=>{
-	operator.addEventListener('click',(event)=>{
+operators.forEach((operator) => {
+	operator.addEventListener('click', (event) => {
 		inputOperator(event.target.value)
-        updateScreen(event.target.value)
+		updateScreen(event.target.value)
 	})
 })
-numbers.forEach((number)=>{
- number.addEventListener('click',()=>{
-      inputNumber(event.target.value)
-      updateScreen(currentInput)
- })
+numbers.forEach((number) => {
+	number.addEventListener('click', () => {
+		inputNumber(event.target.value)
+		updateScreen(currentInput)
+	})
 })
 
-let prevInput='0'
-let calculationOperator=''
-let currentInput='0'
+let prevInput = '0'
+let calculationOperator = ''
+let currentInput = '0'
