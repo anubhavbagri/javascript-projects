@@ -1,1 +1,1 @@
-![Count clicks](problem.png)
+![Count clicks](Problem.png)
