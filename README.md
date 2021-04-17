@@ -1,6 +1,7 @@
-### Contents
+## Contents
 
 * [Count clicks](https://anubhavbagri.github.io/javascript-projects/Count%20clicks/index.html)
+* [Theme Toggler](https://anubhavbagri.github.io/javascript-projects/Toggle%20Mode/index.html)
 * [Digital Clock](https://anubhavbagri.github.io/javascript-projects/javascript%20clock/index.html)
 * [To Do List](https://anubhavbagri.github.io/javascript-projects/js%20to-do%20list/index.html)
 * [Basic Calculator](https://anubhavbagri.github.io/javascript-projects/basic-calculator/index.html)
