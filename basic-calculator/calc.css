@@ -23,6 +23,14 @@ button {
   outline: none;
 }
 
+button:hover {
+  background-color: #FFC877;
+}
+
+.operator:hover {
+  background-color: #C1453B;
+}
+
 #inputLabel {
   height: 120px;
   font-size: 40px;
