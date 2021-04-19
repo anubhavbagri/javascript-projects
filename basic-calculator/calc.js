@@ -14,6 +14,26 @@ function pushBtn(obj) {
 		// All Clear
 		inputLabel.innerHTML = '0';
 
+	} else if (pushed == '%') {
+		// Percentage
+		result = inputLabel.innerHTML / '100';
+		inputLabel.innerHTML = result;
+
+	} else if (pushed == '+/-') {
+		// Change sign
+		inputLabel.innerHTML *= '-1';	//Type coersion OP
+
+		/*
+		//SHIT I WAS TRYNA DO
+		var str = inputLabel.innerHTML;
+		console.log(str.charAt(0));
+		if (str.charAt(0) == '-') {
+			inputLabel.innerHTML.replace("-", "+");
+		}
+		else
+			inputLabel.innerHTML = '-' + inputLabel.innerHTML;
+		*/
+
 	} else {
 		if (inputLabel.innerHTML == '0') {
 			inputLabel.innerHTML = pushed;
