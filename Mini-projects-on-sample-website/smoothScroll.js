@@ -1,6 +1,7 @@
 
 var navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
 // console.log(navMenuAnchorTag);
+var scrollInterval;
 
 for (var i = 0; i <= navMenuAnchorTags.length; i++) {
     navMenuAnchorTags[i].addEventListener('click', function (e) {
@@ -9,20 +10,32 @@ for (var i = 0; i <= navMenuAnchorTags.length; i++) {
         // console.log(targetSectionID);
         var targetSection = document.querySelector(targetSectionID);
         // console.log(targetSection);
-        var scrollInterval = setInterval(function () {
-            var targetSectionCoordinates = targetSection.getBoundingClientRect();
-            // console.log(targetSectionCoordinates);
-            if (targetSectionCoordinates.top <= 0) {
-                clearInterval(scrollInterval);
-                return;
-            }
-            window.scrollBy(0, 50);
+
+        // scrollInterval = setInterval(scrollVertically, 20, targetSection);
+
+        scrollInterval = setInterval(function () {
+            scrollVertically(targetSection);
         }, 20);
     });
 }
 
+function scrollVertically(targetSection) {
+    var targetSectionCoordinates = targetSection.getBoundingClientRect();
+    // console.log(targetSectionCoordinates);
+    if (targetSectionCoordinates.top <= 0) {
+        clearInterval(scrollInterval);
+        return;
+    }
+    window.scrollBy(0, 50);
+}
+
+
+
+
+
 /*
-//ALTERNATIVE
+// ALTERNATIVE - Contains contact section scroll Bug🚧
+
 var navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
 for (var i = 0; i <= navMenuAnchorTags.length; i++) {
     navMenuAnchorTags[i].addEventListener('click', function (e) {
