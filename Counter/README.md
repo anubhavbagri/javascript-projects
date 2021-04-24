@@ -1,1 +1,1 @@
-![Counter](img/Problem3.png)
+![Counter](Problem.png)
