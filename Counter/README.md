@@ -1,0 +1,1 @@
+![Counter](img/Problem3.png)
