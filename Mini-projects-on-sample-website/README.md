@@ -6,6 +6,3 @@
 
 ![Auto Fill Skill Bars](img/Problem2.png)
 
-## Counter
-
-![Counter](img/Problem3.png)
