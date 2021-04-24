@@ -5,6 +5,7 @@
 * [Change Color and Shape](https://anubhavbagri.github.io/javascript-projects/Change-color-shape/index.html)
 * [Basic Calculator](https://anubhavbagri.github.io/javascript-projects/basic-calculator/index.html)
 * [Digital Clock](https://anubhavbagri.github.io/javascript-projects/javascript%20clock/index.html)
+* [Features on Sample Website](https://anubhavbagri.github.io/javascript-projects/Mini-projects-on-sample-website/index.html)
 * [To Do List](https://anubhavbagri.github.io/javascript-projects/js%20to-do%20list/index.html)
 * [Snake Game](https://anubhavbagri.github.io/javascript-projects/snake-game/snake.html)
 * [Acknowledgements](#acknowledgements)
