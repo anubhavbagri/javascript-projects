@@ -21,8 +21,11 @@ for (var i = 0; i <= navMenuAnchorTags.length; i++) {
 
 function scrollVertically(targetSection) {
     var targetSectionCoordinates = targetSection.getBoundingClientRect();
-    // console.log(targetSectionCoordinates);
+    // console.log(targetSectionCoordinates.top);
     if (targetSectionCoordinates.top <= 0) {
+        clearInterval(scrollInterval);
+        return;
+    } else if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
         clearInterval(scrollInterval);
         return;
     }
